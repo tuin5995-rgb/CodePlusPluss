@@ -1,17 +1,9 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="google-site-verification"
-        content="2ic0XfFAl8HO4GQJvAguIVNZlGUaAm1MSj-PzwW36Gs"
-    />
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Code++</title>
 
@@ -24,11 +16,11 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: #f5f7fa;
-            color: #222;
+            color: #202124;
         }
 
         header {
-            background: #2468b1;
+            background: #1f6feb;
             color: white;
             padding: 45px 20px;
             text-align: center;
@@ -36,32 +28,31 @@
 
         header h1 {
             margin: 0;
-            font-size: 48px;
+            font-size: 42px;
         }
 
         header p {
             margin-top: 10px;
-            font-size: 18px;
-            opacity: 0.95;
+            font-size: 17px;
+            opacity: 0.9;
         }
 
-        main {
+        .container {
             max-width: 850px;
-            margin: 40px auto;
+            margin: 35px auto;
             padding: 0 20px;
         }
 
         .card {
             background: white;
-            border-radius: 14px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
         .card h2 {
             margin-top: 0;
-            color: #2468b1;
         }
 
         .info {
@@ -71,40 +62,51 @@
         .download {
             display: block;
             text-decoration: none;
-            background: #2468b1;
+            background: #1f6feb;
             color: white;
-            padding: 18px 20px;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 17px;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
             transition: 0.2s;
         }
 
         .download:hover {
-            background: #185493;
-            transform: translateY(-2px);
+            background: #1558b0;
+            transform: translateY(-1px);
         }
 
-        .download strong {
-            font-size: 20px;
+        .download-title {
+            font-size: 18px;
+            font-weight: bold;
         }
 
-        .features {
-            padding-left: 20px;
-            line-height: 1.8;
+        .download-subtitle {
+            font-size: 14px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .old-version {
+            background: #f5f7fa;
+            color: #202124;
+            border: 1px solid #d8dde5;
+        }
+
+        .old-version:hover {
+            background: #e9edf3;
         }
 
         footer {
             text-align: center;
-            padding: 30px 20px;
             color: #777;
+            padding: 30px 10px;
             font-size: 14px;
         }
 
         code {
             background: #eef1f5;
-            padding: 3px 6px;
-            border-radius: 5px;
+            padding: 2px 6px;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -113,86 +115,107 @@
 
 <header>
     <h1>Code++</h1>
-    <p>Simple code editor for C, C++, Python and text</p>
+    <p>Simple code editor for Windows</p>
 </header>
 
-<main>
+<div class="container">
 
-    <section class="card">
-        <h2>Thông tin</h2>
+    <!-- INFORMATION -->
+
+    <div class="card">
+        <h2>Information</h2>
 
         <div class="info">
-
             <p>
-                <strong>Code++</strong> là một trình soạn thảo mã nguồn
-                đơn giản dành cho Windows.
+                <strong>Code++</strong> is a simple code editor
+                for Windows.
             </p>
 
             <p>
-                Ứng dụng hỗ trợ soạn thảo các ngôn ngữ như
-                <strong>C</strong>, <strong>C++</strong> và
-                <strong>Python</strong>, cùng với các tệp văn bản thông thường.
+                Current version: <strong>1.1.3</strong>
             </p>
 
             <p>
-                Code++ được phát triển bằng C++ sử dụng Win32 API
-                và có thể sử dụng cùng MinGW để biên dịch mã nguồn.
+                Supports C, C++, Python and text editing.
+                The application is built with C++ and Win32.
             </p>
 
+            <p>
+                Code++ is currently in active development.
+            </p>
         </div>
-    </section>
+    </div>
 
 
-    <section class="card">
-        <h2>Tính năng</h2>
+    <!-- LATEST DOWNLOAD -->
 
-        <ul class="features">
-            <li>Soạn thảo C</li>
-            <li>Soạn thảo C++</li>
-            <li>Soạn thảo Python</li>
-            <li>Soạn thảo file TXT</li>
-            <li>Syntax highlighting cơ bản</li>
-            <li>Tự động thụt dòng</li>
-            <li>Hỗ trợ TAB</li>
-            <li>Hỗ trợ UTF-8 và ANSI</li>
-            <li>Giao diện Windows đơn giản</li>
-        </ul>
-    </section>
-
-
-    <section class="card">
+    <div class="card">
         <h2>Download Latest</h2>
 
-        <a
-            class="download"
-            href="./CodePlusPlus-1.1.2.zip"
-            download="CodePlusPlus-1.1.2.zip"
-        >
-            CodePlusPlus-1.1.2.zip
-            <br>
-            <strong>Nhấn để tải xuống</strong>
+        <a class="download" href="Code++ 1.1.3.zip" download>
+
+            <div class="download-title">
+                Code++ 1.1.3 - ZIP
+            </div>
+
+            <div class="download-subtitle">
+                Download the latest version
+            </div>
+
         </a>
-    </section>
+    </div>
 
 
-    <section class="card">
-        <h2>Phiên bản hiện tại</h2>
+    <!-- VERSION HISTORY -->
+
+    <div class="card">
+        <h2>Version History</h2>
 
         <p>
+            <strong>Code++ 1.1.3</strong>
+        </p>
+
+        <p>
+            Latest version of Code++.
+        </p>
+
+        <a class="download" href="Code++ 1.1.3.zip" download>
+            <div class="download-title">
+                Code++ 1.1.3 - ZIP
+            </div>
+
+            <div class="download-subtitle">
+                Download this version
+            </div>
+        </a>
+
+
+        <p style="margin-top: 30px;">
             <strong>Code++ 1.1.2</strong>
         </p>
 
         <p>
-            Bản phát hành hiện tại dành cho Windows.
+            Previous version of Code++.
         </p>
-    </section>
 
-</main>
+        <a class="download old-version" href="Code++ 1.1.2.zip" download>
+            <div class="download-title">
+                Code++ 1.1.2 - ZIP
+            </div>
 
+            <div class="download-subtitle">
+                Download previous version
+            </div>
+        </a>
+
+    </div>
+
+</div>
 
 <footer>
-    Code++ &copy; 2026
+    Code++ · Version 1.1.3
 </footer>
 
 </body>
 </html>
+```
