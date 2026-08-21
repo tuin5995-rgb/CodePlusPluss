@@ -1,3 +1,24 @@
+# Code++
+
+Code++ is a lightweight C/C++/Python code editor and IDE for Windows.
+
+## Features
+
+- C support
+- C++ support
+- Python support
+- Lightweight
+- Fast startup
+- Windows application
+
+## Download
+
+Download the latest version from GitHub Releases.
+
+## Author
+
+tuin5965-eng
+
 # CodePlusPluss
 
 **CodePlusPluss** is a simple Windows code editor made with C++ and Win32 API.
