@@ -4,20 +4,18 @@ Code++ is a lightweight C/C++/Python code editor and IDE for Windows.
 
 ## Features
 
-- C support
-- C++ support
-- Python support
-- Lightweight
-- Fast startup
-- Windows application
-
-## Download
-
-Download the latest version from GitHub Releases.
-
-## Author
-
-tuin5965-eng
+* C support
+* C++ support
+* Python support
+* Plain text support
+* Lightweight
+* Fast startup
+* Windows application
+* Basic syntax highlighting
+* Auto indentation
+* Find and Replace
+* File management
+* UTF-8 and ANSI encoding
 
 # CodePlusPluss
 
@@ -25,9 +23,9 @@ tuin5965-eng
 
 It started as a small project because I wanted to make my own code editor instead of always using a huge IDE for everything.
 
-Right now, it supports **C, C++, Python and plain text**, with some basic features like syntax highlighting, auto indentation, file management and encoding selection.
+Right now, it supports **C, C++, Python and plain text**, with features such as syntax highlighting, auto indentation, file management, encoding selection and Find / Replace.
 
-It's still a work in progress, so don't expect it to replace VS Code anytime soon. I'm just building it step by step and adding stuff as I go.
+It's still a work in progress, so don't expect it to replace VS Code anytime soon. I'm building it step by step and adding features as the project grows.
 
 ---
 
@@ -46,6 +44,9 @@ It's still a work in progress, so don't expect it to replace VS Code anytime soo
 * Lightweight Windows UI
 * Keyboard shortcuts
 * File type detection
+* Find
+* Replace
+* Edit menu
 
 ---
 
@@ -85,7 +86,7 @@ No need to make everything complicated.
 
 Screenshots will be added as the UI changes.
 
-The current interface is intentionally pretty simple: editor on top, output panel at the bottom, and the usual File / Language / Encoding menus.
+The current interface is intentionally simple: editor on top, output panel at the bottom, and menus for File, Edit, Language and Encoding.
 
 ---
 
@@ -93,13 +94,21 @@ The current interface is intentionally pretty simple: editor on top, output pane
 
 ### Latest Release
 
+**CodePlusPluss 1.1.3**
+
+Download:
+
+**CodePlusPlus-1.1.3.zip**
+
+The ZIP contains the current Windows build and the project files.
+
+### Previous Release
+
 **CodePlusPluss 1.1.2**
 
 Download:
 
 **CodePlusPlus-1.1.2.zip**
-
-The ZIP contains the current Windows build and the project files.
 
 ---
 
@@ -169,9 +178,9 @@ Just C++, Windows API and a questionable amount of time spent staring at compile
 
 Mostly because I wanted to.
 
-I like messing around with programming and Windows stuff, and making a code editor seemed like a pretty good project to learn from.
+I like messing around with programming and Windows stuff, and making a code editor seemed like a good project to learn from.
 
-There's also something kinda fun about making a program that you actually use yourself.
+There's also something fun about making a program that you actually use yourself.
 
 CodePlusPluss isn't trying to be the next VS Code or Visual Studio.
 
@@ -181,7 +190,7 @@ It's just my own editor, and I'm slowly making it better.
 
 ## Current Version
 
-### CodePlusPluss 1.1.2
+### CodePlusPluss 1.1.3
 
 Current features include:
 
@@ -195,6 +204,10 @@ Current features include:
 * UTF-8 / ANSI
 * Output panel
 * Native Windows interface
+* Edit menu
+* Find
+* Replace
+* Resource-based application icon
 
 ---
 
@@ -205,7 +218,6 @@ Some stuff I'd like to add eventually:
 * Better syntax highlighting
 * More languages
 * Line numbers
-* Find / Replace
 * Dark mode
 * Better themes
 * More keyboard shortcuts
@@ -262,7 +274,7 @@ That's basically development.
 
 ## Status
 
-**CodePlusPluss 1.1.2 — Active Development**
+**CodePlusPluss 1.1.3 — Active Development**
 
 It's not finished, and it's not supposed to be.
 
@@ -283,4 +295,5 @@ More updates coming later.
 ---
 
 **CodePlusPluss**
+
 *Simple code. Simple editor. No unnecessary nonsense.*
