@@ -15,11 +15,11 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: #f5f7fa;
-            color: #202124;
+            color: #222;
         }
 
         header {
-            background: #1f6feb;
+            background: #2468b1;
             color: white;
             padding: 45px 20px;
             text-align: center;
@@ -27,31 +27,32 @@
 
         header h1 {
             margin: 0;
-            font-size: 42px;
+            font-size: 48px;
         }
 
         header p {
             margin-top: 10px;
-            font-size: 17px;
-            opacity: 0.9;
+            font-size: 18px;
+            opacity: 0.95;
         }
 
-        .container {
+        main {
             max-width: 850px;
-            margin: 35px auto;
+            margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
             background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
         .card h2 {
             margin-top: 0;
+            color: #2468b1;
         }
 
         .info {
@@ -61,41 +62,40 @@
         .download {
             display: block;
             text-decoration: none;
-            background: #1f6feb;
+            background: #2468b1;
             color: white;
-            padding: 16px 20px;
-            border-radius: 8px;
-            margin-top: 15px;
+            padding: 18px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 17px;
             transition: 0.2s;
         }
 
         .download:hover {
-            background: #1558b0;
-            transform: translateY(-1px);
+            background: #185493;
+            transform: translateY(-2px);
         }
 
-        .download-title {
-            font-size: 18px;
-            font-weight: bold;
+        .download strong {
+            font-size: 20px;
         }
 
-        .download-subtitle {
-            font-size: 14px;
-            margin-top: 5px;
-            opacity: 0.9;
+        .features {
+            padding-left: 20px;
+            line-height: 1.8;
         }
 
         footer {
             text-align: center;
+            padding: 30px 20px;
             color: #777;
-            padding: 30px 10px;
             font-size: 14px;
         }
 
         code {
             background: #eef1f5;
-            padding: 2px 6px;
-            border-radius: 4px;
+            padding: 3px 6px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -104,14 +104,12 @@
 
 <header>
     <h1>Code++</h1>
-    <p>Simple code editor for Windows</p>
+    <p>Simple code editor for C, C++, Python and text</p>
 </header>
 
-<div class="container">
+<main>
 
-    <!-- INFORMATION -->
-
-    <div class="card">
+    <section class="card">
         <h2>Thông tin</h2>
 
         <div class="info">
@@ -121,58 +119,68 @@
             </p>
 
             <p>
-                Phiên bản hiện tại: <strong>1.1.2</strong>
+                Ứng dụng hỗ trợ soạn thảo các ngôn ngữ như
+                <strong>C</strong>, <strong>C++</strong> và
+                <strong>Python</strong>, cùng với các tệp văn bản thông thường.
             </p>
 
             <p>
-                Hỗ trợ soạn thảo C, C++, Python và văn bản.
-                Ứng dụng được xây dựng bằng C++ và Win32.
-            </p>
-
-            <p>
-                Đây là phiên bản đầu tiên được phát hành trên trang này.
+                Code++ được phát triển bằng C++ sử dụng Win32 API
+                và có thể sử dụng cùng MinGW để biên dịch mã nguồn.
             </p>
         </div>
-    </div>
+    </section>
 
 
-    <!-- DOWNLOAD -->
+    <section class="card">
+        <h2>Tính năng</h2>
 
-    <div class="card">
+        <ul class="features">
+            <li>Soạn thảo C</li>
+            <li>Soạn thảo C++</li>
+            <li>Soạn thảo Python</li>
+            <li>Soạn thảo file TXT</li>
+            <li>Syntax highlighting cơ bản</li>
+            <li>Tự động thụt dòng</li>
+            <li>Hỗ trợ TAB</li>
+            <li>Hỗ trợ UTF-8 và ANSI</li>
+            <li>Giao diện Windows đơn giản</li>
+        </ul>
+    </section>
+
+
+    <section class="card">
         <h2>Download Latest</h2>
 
-        <a class="download" href="Code++ 1.1.2.zip" download>
-
-            <div class="download-title">
-                Code++ 1.1.2 - ZIP
-            </div>
-
-            <div class="download-subtitle">
-                Tải xuống phiên bản mới nhất
-            </div>
-
+        <a
+            class="download"
+            href="./CodePlusPlus-1.1.2.zip"
+            download
+        >
+            Code++ 1.1.2 - ZIP
+            <br>
+            <strong>Nhấn để tải xuống</strong>
         </a>
-    </div>
+    </section>
 
 
-    <!-- VERSION -->
-
-    <div class="card">
-        <h2>Version</h2>
+    <section class="card">
+        <h2>Phiên bản hiện tại</h2>
 
         <p>
             <strong>Code++ 1.1.2</strong>
         </p>
 
         <p>
-            Phiên bản hiện tại của Code++.
+            Bản phát hành hiện tại dành cho Windows.
         </p>
-    </div>
+    </section>
 
-</div>
+</main>
+
 
 <footer>
-    Code++ · Version 1.1.2
+    Code++ &copy; 2026
 </footer>
 
 </body>
